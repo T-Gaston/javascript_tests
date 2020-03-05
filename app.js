@@ -87,18 +87,24 @@ export const arraySum = (arr) => {
   return addNumb
 }
 
-// export const allNumbersGreaterThanZero = (arr) => {
-//   for (var i = 0; i < arr.length; i++) {
-//     var stuff = (arr[i] <= 0) => {
-//       return stuff.every
-//     }
-//   }
-// }                  not sure why I can't get this to work!
+export const allNumbersGreaterThanZero = (arr) => {
+  function greaterThanZero(arrayStuff) {
+    return arrayStuff > 0 }
+    return arr.every(greaterThanZero)
+  }
 
 
 export const someNumbsGreaterThanZero = (arr) => {
-  var someThan = arr.some((number) => {
-    return number >= 0
-  })
-  return someThan
+  function someNumb(number){
+    return number % 2 != 0
+  }
+  return arr.some(someNumb)
 }
+
+export const evensOnlyAndDoubleArray = (arr) => {
+  function evenNumbs(number){
+    return number % 2 !=0
+  }
+  return evenNumbs * 2
+}               // why doesn't this worrrrkkkkk???????
+

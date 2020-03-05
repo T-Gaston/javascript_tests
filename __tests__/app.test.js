@@ -7,7 +7,8 @@ import {
   evensOnlyArray,
   arraySum,
   someNumbsGreaterThanZero,
-  // allNumbersGreaterThanZero,
+  allNumbersGreaterThanZero,
+  evensOnlyAndDoubleArray,
 } from '../app'
 import { TestScheduler } from 'jest'
 
@@ -37,14 +38,21 @@ describe('arraySum Test', () => {
   })
 })
 
-// describe('allNumbersGreaterThanZero Test', () => {
-//   test('print true if all numbers in array are greater than 0', () => {
-//     expect(allNumbersGreaterThanZero([1, 2, 3, 4])).toBeGreaterThanOrEqual(0);
-//   })
-// })
+describe('allNumbersGreaterThanZero Test', () => {
+  test('print true if all numbers in array are greater than 0', () => {
+    expect(allNumbersGreaterThanZero([1,2,3,4])).toEqual(true);
+  })
+})
+
 
 describe('someNumbsGreaterThanZero Test', () => {
   test('print true if some numbers in array are greater than 0', () => {
-    expect(someNumbsGreaterThanZero()).toBeGreaterThan(0);
+    expect(someNumbsGreaterThanZero([1,2,3,4])).toEqual(true);
+  })
+})
+
+describe('evensOnlyAndDoubleArray Test', () => {
+  test('print even numbs and double them', () => {
+    expect(evensOnlyAndDoubleArray([1,2,3,4])).toEqual([4,8]);
   })
 })

@@ -1,4 +1,4 @@
-import {
+import myArray, {
   // methods,
   // methods,
   // methods,
@@ -9,6 +9,7 @@ import {
   someNumbsGreaterThanZero,
   allNumbersGreaterThanZero,
   evensOnlyAndDoubleArray,
+  doubleLikes,
 } from '../app'
 import { TestScheduler } from 'jest'
 
@@ -51,8 +52,28 @@ describe('someNumbsGreaterThanZero Test', () => {
   })
 })
 
-describe('evensOnlyAndDoubleArray Test', () => {
-  test('print even numbs and double them', () => {
-    expect(evensOnlyAndDoubleArray([1,2,3,4])).toEqual([4,8]);
-  })
-})
+// describe('evensOnlyAndDoubleArray Test', () => {
+//   test('print even numbs and double them', () => {
+//     expect(evensOnlyAndDoubleArray([1,2,3,4])).toEqual([4,8]);
+//   })
+// })
+
+
+// describe('doubleLikes Test', () => {
+//   test('expect double likes to equal the same array names with likes *2', () => {
+//     expect(doubleLikes(artists)).toEqual(artistDoubled);
+//   })
+// })
+
+// artists = [
+//   {name:'a', likes:100},
+//   {name:'b', likes:120},
+//   {name:'c', likes:110},
+// ]
+
+// artistDoubled = [
+//   {name:'a', likes: 200},
+//   {name:'b', likes: 240},
+//   {name:'c', likes: 220},
+// ]
+

@@ -101,10 +101,21 @@ export const someNumbsGreaterThanZero = (arr) => {
   return arr.some(someNumb)
 }
 
-export const evensOnlyAndDoubleArray = (arr) => {
-  function evenNumbs(number){
-    return number % 2 !=0
-  }
-  return evenNumbs * 2
-}               // why doesn't this worrrrkkkkk???????
+// export const evensOnlyAndDoubleArray = (arr) => {
+//   function evenNumbs(number){
+//     return number % 2 !=0
+//   }
+//   return evenNumbs * 2
+// }               // why doesn't this worrrrkkkkk???????
 
+
+
+
+
+// export const doubleLikes = (arr) => {
+//   return arr.map( e => {
+//     return {name: e.name, likes: e.likes *2}
+//   })
+// }
+
+//we did this one in class this morning and I CAN'T GET IT TO WORK
